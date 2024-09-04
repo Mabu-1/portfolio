@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Md. Mahtab Uddin - Frontend Developer with a passion for creating intuitive and dynamic user interfaces. Connect with me on LinkedIn and GitHub." />
+  <meta name="author" content="Md. Mahtab Uddin" />
+
+  <!-- Open Graph Metadata -->
+  <meta property="og:title" content="Md. Mahtab Uddin - Frontend Developer" />
+  <meta property="og:description" content="Frontend Developer specializing in dynamic user interfaces. Explore my work on LinkedIn and GitHub." />
+  <meta property="og:url" content="https://www.linkedin.com/in/md-mahtab-uddin-3a366b326/" />
+
+  <!-- LinkedIn and GitHub -->
+  <link rel="me" href="https://www.linkedin.com/in/md-mahtab-uddin-3a366b326/" />
+  <link rel="me" href="https://github.com/Mabu-1" />
+  <link rel="icon" type="image/png" href="https://i.ibb.co/W0s3Zq9/pngtree-m-green-text-3d-a-to-z-png-image-3042020.png" />
+
+  <title>Mahtab</title>
+
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Courier New', monospace;
+      background-color: #FFF7F3;
+    }
+    #loading-screen {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background-color: #FFF7F3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      transition: opacity 0.5s ease-out;
+    }
+    #welcome-text {
+      font-size: 2rem; /* Adjust font size for smaller devices */
+      color: #65a30d; /* text-lime-600 equivalent */
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 0.15em solid #65a30d;
+      margin: 0 auto;
+      letter-spacing: 0.15em;
+      animation: typing 1.5s steps(9, end) forwards, blink-caret 0.5s step-end infinite;
+    }
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 9ch } /* Adjust width for "Welcome" */
+    }
+    @keyframes blink-caret {
+      from, to { border-color: transparent }
+      50% { border-color: #65a30d; }
+    }
+    .hidden {
+      display: none;
+    }
+
+    /* Responsive Styles */
+    @media (min-width: 640px) { /* sm */
+      #welcome-text {
+        font-size: 3rem;
+      }
+    }
+    @media (min-width: 768px) { /* md */
+      #welcome-text {
+        font-size: 4rem;
+      }
+    }
+    @media (min-width: 1024px) { /* lg */
+      #welcome-text {
+        font-size: 5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div id="loading-screen">
+    <div id="welcome-text">Welcome</div>
+  </div>
+  
+  <!-- Main App Root -->
+  <div id="root" class="hidden"></div>
+
+  <!-- JavaScript to handle the transition -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const loadingScreen = document.getElementById('loading-screen');
+      const root = document.getElementById('root');
+      const welcomeText = document.getElementById('welcome-text');
+
+      // Function to fade out loading screen and show main content
+      function transitionToMainContent() {
+        loadingScreen.style.opacity = '0';
+        setTimeout(() => {
+          loadingScreen.style.display = 'none';
+          root.classList.remove('hidden');
+        }, 400); // Match this with the transition time in CSS
+      }
+
+      // Wait for the typing animation to complete
+      welcomeText.addEventListener('animationend', function(e) {
+        if (e.animationName === 'typing') {
+          setTimeout(transitionToMainContent, 400); // Short pause after typing finishes
+        }
+      });
+    });
+  </script>
+
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+</html>
