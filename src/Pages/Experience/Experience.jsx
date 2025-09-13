@@ -32,7 +32,7 @@ const Experience = () => {
           <div className="flex items-center justify-center relative mb-6">
             <div className="absolute -inset-6 bg-gradient-radial from-lime-400/20 via-lime-400/5 to-transparent rounded-full animate-pulse"></div>
             <img
-              src="/images/sm_technology_logo.png"
+              src="/sm_technology_logo.png"
               alt="SM Technology Logo"
               className="relative w-32 h-32 md:w-44 md:h-44 rounded-full object-cover shadow-lg ring-4 ring-lime-400/40 transition-all duration-500 hover:scale-105"
             />
