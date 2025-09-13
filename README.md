@@ -1,8 +1,33 @@
-# React + Vite
+# 🚀 Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is my personal portfolio website built with **React + Vite + Tailwind CSS**.  
+It showcases my **skills, projects, education, certifications, and experience**.
 
-Currently, two official plugins are available:
+🔗 **Live Demo**: [Visit My Portfolio](https://portfolio-185f4.web.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
+
+## 📌 Features
+- Responsive and modern UI  
+- Projects showcase with live/demo links  
+- Certifications and education timeline  
+- Contact section with social links  
+- Downloadable resume  
+
+---
+
+## 🛠️ Tech Stack
+- **React** (with Vite) ⚡  
+- **Tailwind CSS** 🎨  
+- **Firebase Hosting** 🔥  
+
+---
+
+## 📬 Contact
+- **LinkedIn:** [Md. Mahtab Uddin](https://www.linkedin.com/in/mahtab-uddin-670342383/)  
+- **GitHub:** [Mabu-1](https://github.com/Mabu-1)  
+- **Email:** mahtabuddin200111@gmail.com  
+
+---
+
+© 2025 Md. Mahtab Uddin. All Rights Reserved.
