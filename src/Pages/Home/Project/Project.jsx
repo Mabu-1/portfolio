@@ -1,90 +1,139 @@
-import React from 'react';
-import { FaLaptop, FaTools, FaUserGraduate } from 'react-icons/fa';
+import React from "react";
+import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 
 const projects = [
   {
-    name: 'RentRight',
-    description: (
-      <ul className="list-none pl-6">
-        <li><FaLaptop className="inline-block mr-2 text-lime-600" />Launch of a comprehensive Property Management Website 🏠</li>
-        <li><FaLaptop className="inline-block mr-2 text-lime-600" />User-friendly platform for buying, renting, and exploring real estate</li>
-        <li><FaTools className="inline-block mr-2 text-lime-600" />Advanced Search: Find properties by location, price, and more</li>
-        <li><FaTools className="inline-block mr-2 text-lime-600" />Services: Tailor services to fit your needs with ease</li>
-        <li><FaLaptop className="inline-block mr-2 text-lime-600" />Real-Time Updates: Stay informed with the latest listings and notifications</li>
-      </ul>
-    ),
-    website: 'https://rentright-a088e.web.app/',
-    image: 'https://i.ibb.co/1zkCP0N/Whats-App-Image-2024-09-02-at-11-50-20-8a4f4315.jpg',
+    name: "TROLLEYBOSS",
+    description: "Developed the TrolleyBoss e-commerce website, an online store for heavy-duty plant trolleys. Built a clean, user-friendly interface with focus on product showcase, easy navigation, and seamless shopping experience.",
+    website: "https://trolleyboss.com/",
+    image: "https://i.ibb.co.com/tMGLMzwk/Screenshot-26.png",
+    tags: ["Shopify", "Liquid", "JavaScript", "CSS3", "HTML5", "E-commerce"],
   },
   {
-    name: 'ResiCraft',
-    description: (
-      <ul className="list-none pl-6">
-        <li><FaLaptop className="inline-block mr-2 text-lime-600" />Elevate your apartment living experience</li>
-        <li><FaTools className="inline-block mr-2 text-lime-600" />Comprehensive apartment management features</li>
-      </ul>
-    ),
-    website: 'https://resicraft-b4fdb.web.app/',
-    image: 'https://i.ibb.co/BGTvhnS/Screenshot-2024-09-04-180757.png',
+    name: "BIGSWAG COLLECTION",
+    description: "Built and designed the BigSwagCollection Shopify store, including custom sections for a unique look and feel. Set up marketing, shipping, and delivery features to create a fully functional e-commerce experience.",
+    website: "https://bigswagcollection.store/",
+    image: "https://i.ibb.co.com/j9TRQ0q7/Screenshot-27.png",
+    tags: ["Shopify", "Liquid", "JavaScript", "CSS3", "HTML5", "E-commerce", "SEO Setup"],
   },
   {
-    name: 'eStudy',
-    description: (
-      <ul className="list-none pl-6">
-        <li><FaUserGraduate className="inline-block mr-2 text-lime-600" />Start your journey with our Online Study platform</li>
-        <li><FaUserGraduate className="inline-block mr-2 text-lime-600" />Collaborative learning hub to enhance your academic journey</li>
-        <li><FaTools className="inline-block mr-2 text-lime-600" />Join study groups, share resources, and achieve academic excellence</li>
-        <li><FaLaptop className="inline-block mr-2 text-lime-600" />Seamlessly connect with peers, submit assignments, and track progress</li>
-        <li><FaUserGraduate className="inline-block mr-2 text-lime-600" />Elevate your learning experience with us</li>
-      </ul>
-    ),
-    website: 'https://estudy-33d78.web.app/',
-    image: 'https://i.ibb.co/pXhRmqf/Screenshot-2024-09-04-181059.png',
+    name: "NEEPETZ",
+    description: "Designed and developed the Nepetz UK Shopify store with custom collections and filters to help customers easily find products. Optimized the store for a seamless e-commerce experience.",
+    website: "https://www.nepetz.co.uk/",
+    image: "https://i.ibb.co.com/xtrgDgRp/Screenshot-28.png",
+    tags: ["Shopify", "Liquid", "JavaScript", "CSS3", "HTML5", "E-commerce"],
+  },
+  {
+    name: "SENSES",
+    description: "Developed The Senses Store using the Shopify Sense theme. Optimized for SEO, integrated Google Search Console, and set up domain ownership along with digital marketing tools.",
+    website: "https://thesensesstore.com/",
+    image: "https://i.ibb.co.com/ch4nR7cc/Screenshot-29.png",
+    tags: ["Shopify", "Liquid", "JavaScript", "CSS3", "HTML5", "E-commerce", "SEO Setup"],
+  },
+    {
+    name: "DINASMART",
+    description: "Designed and developed the DINASMART   e-commerce website, an online store for smart watches. Built a clean, user-friendly interface with focus on product showcase, easy navigation, and seamless shopping experience",
+    website: "https://dinasmart.com//",
+    image: "https://i.ibb.co.com/LDJDzVkH/Screenshot-32.png",
+    tags: ["Shopify", "Liquid", "JavaScript", "CSS3", "HTML5", "E-commerce"],
+  },
+  {
+    name: "MovieDB",
+    description: "Explore a movie database with dynamic search, detailed pages, comparison tools, and the ability to save favorites to a Watch List or share on social media.",
+    website: "https://movie-db-dxhb.vercel.app/",
+    github: "https://github.com/Mabu-1/MovieDB",
+    image: "https://i.ibb.co/NyVM2gn/Screenshot-2024-12-24-124136.png",
+    tags: ["Next.js", "Tailwind CSS", "API Integration", "MongoDB", "Axios", "Vercel"],
   },
 ];
 
 const Project = () => {
   return (
-    <section className="py-12" id="projects">
-      <div className="container mx-auto px-4 md:px-8">
-        <h2 className="text-4xl font-bold text-center text-gray-800 mb-2">My Projects</h2>
-        <p className="text-xl font-medium text-center text-gray-700 mb-8">
-          Crafting innovative and user-friendly web applications with
-          <span className="ml-2 text-2xl font-bold text-lime-600">
-            cutting-edge technologies
-          </span>
-        </p>
-        <div className="space-y-16">
-          {projects.map((project, index) => (
+    <section id="projects" className="py-16  relative overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
+        {/* Section Header */}
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-lime-400 mb-4">My Projects</h2>
+          <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+            Crafting innovative and user-friendly web applications with{" "}
+            <span className="ml-2 text-2xl font-bold text-lime-400">cutting-edge technologies</span>
+          </p>
+        </div>
+
+        {/* Project Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+          {projects.map((project) => (
             <div
               key={project.name}
-              className={`relative flex flex-col md:flex-row items-center ${
-                index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
-              }`}
+              className="group bg-gray-800/60 backdrop-blur-lg rounded-2xl shadow-lg overflow-hidden hover:shadow-lime-500/30 transition-all duration-500"
             >
-              <div className="relative w-full md:w-1/2 mb-6 md:mb-0">
-                <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-pink-300 to-orange-300"></div>
-                <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-orange-300 to-pink-300"></div>
+              {/* Project Image */}
+              <div className="relative h-56 md:h-64 overflow-hidden">
                 <img
                   src={project.image}
                   alt={project.name}
-                  className="w-full h-auto rounded-lg shadow-lg border-4"
+                  className="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-105"
                 />
+                <div className="absolute inset-0 border border-lime-500/20 rounded-2xl"></div>
               </div>
-              <div className="md:w-1/2 md:ml-8">
-                <h3 className="text-3xl text-lime-600 font-semibold mb-4">{project.name}</h3>
-                <div className="text-gray-700 mb-4">{project.description}</div>
-                <a
-                  href={project.website}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block px-6 py-3 bg-lime-600 text-white font-medium rounded-md hover:bg-lime-700 transition duration-300"
-                >
-                  Visit Website
-                </a>
+
+              {/* Project Details */}
+              <div className="p-6 flex flex-col justify-between h-full">
+                <h3 className="text-2xl font-bold text-white mb-3">{project.name}</h3>
+                <p className="text-gray-300 text-base mb-4">{project.description}</p>
+
+                {/* Tags */}
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {project.tags.map((tag, idx) => (
+                    <span
+                      key={idx}
+                      className="px-3 py-1 bg-lime-500/10 text-lime-400 rounded-full text-sm font-medium border border-lime-500/20"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+
+                {/* Links */}
+                <div className="flex gap-4 mt-auto">
+                  <a
+                    href={project.website}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`Visit ${project.name} website`}
+                    className="flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-lime-500 to-lime-600 text-white font-medium rounded-lg hover:from-lime-600 hover:to-lime-700 transition-all duration-300 shadow-md hover:shadow-lg"
+                  >
+                    <FaExternalLinkAlt /> <span>Website</span>
+                  </a>
+                  {project.github && (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`View ${project.name} code on GitHub`}
+                      className="flex items-center gap-2 px-5 py-2.5 bg-gray-800 text-white font-medium rounded-lg border border-gray-700 hover:bg-gray-700 transition-all duration-300"
+                    >
+                      <FaGithub /> <span>Code</span>
+                    </a>
+                  )}
+                </div>
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Call to Action */}
+        <div className="mt-20 text-center">
+          <p className="text-gray-400 mb-6">Interested in seeing more of my work?</p>
+          <a
+            href="https://github.com/Mabu-1"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-8 py-4 bg-lime-500 text-white font-bold rounded-xl hover:bg-lime-600 transition-all duration-300"
+          >
+            <FaGithub className="text-xl" />
+            <span>View My GitHub</span>
+          </a>
         </div>
       </div>
     </section>

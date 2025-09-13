@@ -1,4 +1,7 @@
+import Education from "../../Education/Ecucation";
+import Experience from "../../Experience/Experience";
 import Banner from "../Banner/Banner";
+import Certification from "../Certifications/Certifications";
 import Contact from "../Contact/Contact";
 import Email from "../Email/Email";
 import Project from "../Project/Project";
@@ -7,19 +10,15 @@ import Skills from "../Skills/Skills";
 
 const Home = () => {
     return (
-        <div>
+        <div className="pt-16">
             <Banner />
             <Proverb />
-
             <Skills />
-
-
+            <Certification/>
+            <Experience/>
             <Project />
-
-            <Contact />
-
-            <Email />
-
+           <Education />
+           <Contact/>
         </div>
     );
 };
