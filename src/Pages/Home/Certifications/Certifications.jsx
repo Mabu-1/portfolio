@@ -65,7 +65,7 @@ const Certification = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={`View ${cert.course} certificate from ${cert.provider}`}
-                className="w-full md:w-1/2 relative overflow-hidden rounded-2xl shadow-2xl h-80"
+                className="w-full md:w-1/2 relative overflow-hidden rounded-2xl shadow-2xl h-90"
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-lime-500/20 to-purple-500/20 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <img
