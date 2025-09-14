@@ -14,20 +14,20 @@ const Navbar = () => {
 
   const handleToggleMenu = () => setMenuOpen(!isMenuOpen);
 
-useEffect(() => {
-  let ticking = false;
-  const handleScroll = () => {
-    if (!ticking) {
-      window.requestAnimationFrame(() => {
-        setIsScrolled(window.scrollY > 10);
-        ticking = false;
-      });
-      ticking = true;
-    }
-  };
-  window.addEventListener("scroll", handleScroll);
-  return () => window.removeEventListener("scroll", handleScroll);
-}, []);
+  useEffect(() => {
+    let ticking = false;
+    const handleScroll = () => {
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          setIsScrolled(window.scrollY > 10);
+          ticking = false;
+        });
+        ticking = true;
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   if (loading) return <Loading />;
 
@@ -36,7 +36,7 @@ useEffect(() => {
 
   const scrollWithOffset = (el) => {
     const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
-    const yOffset = -80;
+    const yOffset = -80; // navbar height offset
     window.scrollTo({ top: yCoordinate + yOffset, behavior: "smooth" });
   };
 
@@ -46,20 +46,18 @@ useEffect(() => {
     { to: "#certification", label: "CERTIFICATION" },
     { to: "#experience", label: "EXPERIENCE" },
     { to: "#projects", label: "PROJECTS" },
-         { to: "#education", label: "EDUCATION" },
-  { to: "#contact", label: "CONTACT" },
- 
-   
+    { to: "#education", label: "EDUCATION" },
+    { to: "#contact", label: "CONTACT" },
   ];
 
   return (
     <>
-      {/* Navbar */}
+      {/* Sticky Navbar */}
       <div
         className={`fixed top-0 w-full z-[100] transition-all duration-300 ${
           isScrolled
-            ? "bg-gray-900/95 backdrop-blur-lg shadow-xl py-1"
-            : "bg-gray-900/80 backdrop-blur-md shadow-lg py-2"
+            ? "bg-gray-900/95 backdrop-blur-lg shadow-xl py-2"
+            : "bg-transparent py-4"
         }`}
       >
         <div className="max-w-screen-2xl mx-auto px-4 lg:px-16">
@@ -150,10 +148,13 @@ useEffect(() => {
         </div>
       </div>
 
+      {/* Spacer to offset fixed navbar */}
+      <div className="h-20 md:h-24"></div>
+
       {/* Mobile Navigation using Portal */}
       {isMenuOpen &&
         createPortal(
-          <div className="fixed inset-0 top-[64px] z-[2000] bg-gray-900/95 transition-all duration-300 overflow-auto">
+          <div className="fixed inset-0 top-0 z-[2000] bg-gray-900/95 transition-all duration-300 overflow-auto pt-20">
             <div className="p-4 max-w-md mx-auto bg-gray-900 rounded-xl shadow-xl">
               <ul className="space-y-3">
                 {navLinks.map((item, index) => (

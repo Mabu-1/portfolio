@@ -64,7 +64,7 @@ const Banner = () => {
         {/* Intro */}
         <p className="text-sm md:text-base leading-relaxed text-gray-300 max-w-2xl mx-auto sm:mx-0 mb-8">
           Crafting{" "}
-          <span className="text-lime-500">high-performance web apps</span> and{" "}
+          <span className="text-lime-500">high-performance website</span> and{" "}
           <span className="text-lime-500">Shopify solutions</span> with a focus on{" "}
           <span className="text-lime-500">clean design</span>,{" "}
           <span className="text-lime-500">scalability</span>, and{" "}
