@@ -4,7 +4,7 @@ const certifications = [
   {
     course: "Complete Web Development",
     provider: "Programming Hero",
-    date: "Jun 2022",
+    date: "Dec 2022",
     logo: "https://i.ibb.co/fVdKNNZd/programminghero-logo.jpg",
     image: "https://i.ibb.co/zVs9F8Dm/Screenshot-30.png",
     url: "https://drive.google.com/file/d/1oKwkqxfnl5qTpm3lyjStR9U23nCxdk4Y/view",
@@ -12,7 +12,7 @@ const certifications = [
   {
     course: "Reactive Accelerator Course",
     provider: "Learn with Sumit",
-    date: "Jun 2024",
+    date: "Jan 2025",
     logo: "https://i.ibb.co/3YYH8LsG/channels4-profile.jpg",
     image: "https://i.ibb.co/rK0jDmsj/Screenshot-31.png",
     url: "https://drive.google.com/file/d/1vjOgqMURVKzerjzjfkQk_aSr1Q0BM-mn/view",
@@ -20,7 +20,7 @@ const certifications = [
   {
     course: "Reactive Accelerator Course – Certificate of Excellence",
     provider: "Learn with Sumit",
-    date: "Jun 2024",
+    date: "Jan 2025",
     logo: "https://i.ibb.co/3YYH8LsG/channels4-profile.jpg", // same logo as LWS
     image: "https://i.ibb.co.com/9H7030cn/Screenshot-33.png", // ⚠️ replace with screenshot of your certificate
     url: "https://drive.google.com/file/d/1mtci8rTlBx8cuSW1nrxTXRqRjHgmhCAf/view",
