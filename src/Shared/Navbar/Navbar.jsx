@@ -32,7 +32,7 @@ const Navbar = () => {
   if (loading) return <Loading />;
 
   const resumeUrl =
-    "https://drive.google.com/uc?export=download&id=1j5XNVjkNb8Rr1QfiSgb854W2WRfcXF9Z";
+    "https://drive.google.com/uc?export=download&id=10TUYtetL6B7KBftpWn-PhjVPT2sY1byc";
 
   const scrollWithOffset = (el) => {
     const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
