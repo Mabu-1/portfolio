@@ -31,7 +31,7 @@ const SocialMediaIcons = () => {
       </div>
 
       {/* Label */}
-      <p className="rotate-90 font-semibold text-sm tracking-wider text-lime-500">
+      <p className="rotate-90 font-semibold text-sm tracking-wider lg:mt-5 md:mt-2 sm:mt-0 text-lime-500">
         FOLLOW ME
       </p>
     </div>

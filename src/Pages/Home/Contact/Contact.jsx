@@ -57,10 +57,10 @@ const Contact = () => {
   >
     <contact.icon className="text-5xl mb-3 text-lime-500 mx-auto" />
   </a>
-  <h3 className="font-semibold text-lg md:text-xl text-white">
+  <h3 className="font-semibold text-lg md:text-xl  text-white">
     {contact.name}
   </h3>
-  <p className="text-sm text-gray-400">{contact.level}</p>
+  <p className="text-sm sm:text-xs text-gray-400">{contact.level}</p>
 </div>
 
                
