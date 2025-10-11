@@ -2,6 +2,22 @@ import React from "react";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 
 const projects = [
+   {
+    name: "RentRight",
+    description: "Property management platform built with React.js, Node.js, MongoDB, Stripe payments, and Mail setup. Features include advanced property search, instant notifications, and secure payment integration.",
+    website: "https://rentright-a088e.web.app/",
+  
+    image: "https://i.ibb.co.com/gQgp106/Screenshot-39.png",
+    tags: ["React.js", "Tailwind CSS", "API Integration", "MongoDB", "Node.js", "Firebase", "Stripe", "Mailgun", "Vercel"],
+  },
+   {
+    name: "MovieDB",
+    description: "Explore a movie database with dynamic search, detailed pages, comparison tools, and the ability to save favorites to a Watch List or share on social media.",
+    website: "https://movie-db-dxhb.vercel.app/",
+  
+    image: "https://i.ibb.co/NyVM2gn/Screenshot-2024-12-24-124136.png",
+    tags: ["Next.js", "Tailwind CSS", "API Integration",  "Axios", "Vercel"],
+  },
   {
     name: "TROLLEYBOSS",
     description: "Developed the TrolleyBoss e-commerce website, an online store for heavy-duty plant trolleys. Built a clean, user-friendly interface with focus on product showcase, easy navigation, and seamless shopping experience.",
@@ -30,21 +46,14 @@ const projects = [
     image: "https://i.ibb.co.com/ch4nR7cc/Screenshot-29.png",
     tags: ["Shopify", "Liquid", "JavaScript", "CSS3", "HTML5", "E-commerce", "SEO Setup"],
   },
-  {
-    name: "DINASMART",
-    description: "Designed and developed the DINASMART e-commerce website, an online store for smart watches. Built a clean, user-friendly interface with focus on product showcase, easy navigation, and seamless shopping experience",
-    website: "https://dinasmart.com/", // Fixed: removed double slash
-    image: "https://i.ibb.co.com/LDJDzVkH/Screenshot-32.png",
-    tags: ["Shopify", "Liquid", "JavaScript", "CSS3", "HTML5", "E-commerce"],
-  },
-  {
-    name: "MovieDB",
-    description: "Explore a movie database with dynamic search, detailed pages, comparison tools, and the ability to save favorites to a Watch List or share on social media.",
-    website: "https://movie-db-dxhb.vercel.app/",
-  
-    image: "https://i.ibb.co/NyVM2gn/Screenshot-2024-12-24-124136.png",
-    tags: ["Next.js", "Tailwind CSS", "API Integration", "MongoDB", "Axios", "Vercel"],
-  },
+  // {
+  //   name: "DINASMART",
+  //   description: "Designed and developed the DINASMART e-commerce website, an online store for smart watches. Built a clean, user-friendly interface with focus on product showcase, easy navigation, and seamless shopping experience",
+  //   website: "https://dinasmart.com/", // Fixed: removed double slash
+  //   image: "https://i.ibb.co.com/LDJDzVkH/Screenshot-32.png",
+  //   tags: ["Shopify", "Liquid", "JavaScript", "CSS3", "HTML5", "E-commerce"],
+  // },
+ 
 ];
 
 const Project = () => {
