@@ -3,7 +3,7 @@ import { HashLink as Link } from "react-router-hash-link";
 
 // Resume URL
 const resumeUrl =
-  "https://drive.google.com/uc?export=download&id=10TUYtetL6B7KBftpWn-PhjVPT2sY1byc";
+  "https://drive.google.com/uc?export=download&id=1qPYXzns2Gsi9m1yq_wK7o6EEIOcrkodo";
 
 const Footer = () => {
   return (

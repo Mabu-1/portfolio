@@ -5,6 +5,7 @@ const Experience = () => {
   const skills = [
     "HTML5",
     "CSS3",
+    "JavaScript",
     "Liquid",
     "Shopify",
     "App Integration",
